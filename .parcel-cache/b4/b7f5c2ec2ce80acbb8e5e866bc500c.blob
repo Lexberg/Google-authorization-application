@@ -1,0 +1,21 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _reactDom = require("react-dom");
+  var _react = require("react");
+  var _jsxFileName = "/Users/martinandrelexberg/Desktop/forelesning13/src/client/index.jsx";
+  _reactDom.render(/*#__PURE__*/_react.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4,
+      columnNumber: 17
+    }
+  }, "Hello world"), document.getElementById("app"));
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
