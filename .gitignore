@@ -5,3 +5,5 @@ dist/
 .parcel-cache/
 coverage/
 
+/dist/
+/.parcel-cache/
